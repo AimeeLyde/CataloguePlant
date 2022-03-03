@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Plantes - Catalogue de plantes antipaludiques</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <header> <!-- Barre d'en-tête du site -->
+            <div class="header">
+                <nav class="header-nav">
+                    <a href="../index.php" class="header-link">Accueil</a>
+                    <a href="conseils.php" class="header-link">Conseils</a>
+                    <a href="#" class="header-link">Stades de paludisme</a>
+                    <a href="plantes.php" class="header-link" id="selected-link">Plantes</a>
+                </nav>
+                <!---->
+                <div class="stade-container">
+                    <!--<a href="#" class="stade-container-title">Stades de paludisme</a>-->
+                    <div class="stade-bloc">
+                        <a href="stadePA.php" class="stade-link">Peu avancé</a>
+                        <hr>
+                        <a href="stadeA.php" class="stade-link">Avancé</a>
+                    </div>
+                </div>
+                <!---->
+            </div>
+        </header>
+        <div class="main-box">
+            <img src="../img/decors/plant-other3.png" alt="image de plantes haut gauche" class="plant-img-top-left">
+            <img src="../img/decors/plant-other11.png" alt="image de plantes bas droite" class="plant-img-bottom-right">
+            <!-- Titre -->
+            <h1 class="plant-title">Catalogue de plantes</h1>
+            <!-- panneau de droite -->
+            <div class="stade-plant-s">
+                <img src="../img/decors/left-arrow.png" alt="flèche" class="pannel-arrow">
+                <!-- partie utilisée -->
+                <div class="plant-properties">
+                    Partie utilisée
+                    <div class="plant-properties-element" id="plant-properties-part">
+                        <a href="classes/parFeuille.php" class="plant-properties-link">Feuille</a>
+                        <a href="classes/parRacine.php" class="plant-properties-link">Racine</a>
+                        <a href="classes/parTige.php" class="plant-properties-link">Tige</a>
+                    </div>
+                </div>
+                <!-- mode de préparation -->
+                <div class="plant-properties">
+                    Mode de préparation
+                    <div class="plant-properties-element" id="plant-properties-cook">
+                        <a href="classes/parVapeur.php" class="plant-properties-link">Vapeur</a>
+                        <a href="classes/parBouillie.php" class="plant-properties-link">Bouillie</a>
+                        <a href="classes/parCreme.php" class="plant-properties-link">Crème</a>
+                    </div>
+                </div>
+                <!-- mode d'administration -->
+                <div class="plant-properties">
+                    Mode d'administration
+                    <div class="plant-properties-element" id="plant-properties-eat">
+                        <a href="classes/parDecoction.php" class="plant-properties-link">Décoction</a>
+                        <a href="classes/parInjection.php" class="plant-properties-link">Injection</a>
+                        <a href="classes/parSeve.php" class="plant-properties-link">Sève</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Toutes les corates des plantes -->
+            <div class="all-plant-card">
+                <!-- plante 1 -->
+                <div class="plant-card">
+                    <a href="description/adenia-lobata-description.html">
+                        <img src="../img/plantes/adenia_lobota.png" alt="plante 1" class="plant-card-img">
+                        <div class="plant-card-bottom">
+                            <h3 class="plant-name">Adenia lobata</h3>
+                            <p class="plant-description">
+                                Adenia lobata est une liane robuste,
+                                dont la tige peut avoir jusqu’à 12 cm
+                                de diamètre, et s’élever jusqu’à 45 m de hauteur.
+                                La plante est présente en Afrique subsaharienne :
+                                vers le nord, du Sénégal jusqu’en Éthiopie, et...
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <!-- plante 2 -->
+                <div class="plant-card">
+                    <a href="description/azadirachta-description.html">
+                        <img src="../img/plantes/azadirachta.png" alt="plante 2" class="plant-card-img">
+                        <div class="plant-card-bottom">
+                            <h3 class="plant-name">Azadirachta indica</h3>
+                            <p class="plant-description">
+                                Le neem est un arbre monoïque à croissance rapide,
+                                qui peut atteindre une hauteur de 20 mètres, et plus
+                                rarement 35 à 40 mètres. Des preuves de son utilisation ont été trouvées lors de fouilles à Harappa...
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <!-- plante 3 -->
+                <div class="plant-card">
+                    <a href="description/Ageratum-description.html">
+                        <img src="../img/plantes/ageratum.png" alt="ageratum" class="plant-card-img">
+                        <div class="plant-card-bottom">
+                            <h3 class="plant-name">Ageratum conyzoides L. (Asteraceae)</h3>
+                            <p class="plant-description">
+                                Plante dressée, peu ramifiée, mesurant jusqu'à 1,20 m
+                                de haut. Tiges et branches couvertes de longs poils blancs.
+                                Feuilles simples, entières, opposées, pétiolées, ovales,
+                                parfois...
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <!-- plante 4 -->
+                <div class="plant-card">
+                    <a href="description/alchornea2-description.html">
+                        <img src="../img/plantes/alchornea2.png" alt="v" class="plant-card-img">
+                        <div class="plant-card-bottom">
+                            <h3 class="plant-name">Alchornea cordifolia (Euphorbiaceae)</h3>
+                            <p class="plant-description">
+                                C'est un arbuste pouvant atteindre quelques mètres
+                                de haut avec de nombreuses branches depuis la base,
+                                dressée, évasées, parfois retombantes selon l'endroit
+                                où la plante pousse...
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <!-- plante 5 -->
+                <div class="plant-card">
+                    <a href="description/enantia-description.html">
+                        <img src="../img/plantes/enantia.png" alt="enantia" class="plant-card-img">
+                        <div class="plant-card-bottom">
+                            <h3 class="plant-name">Enantia polycarpa (annonceae)</h3>
+                            <p class="plant-description">
+                                elles sont représentées dans tous les groupements
+                                végétaux des tropiques. C'est aussi une famille qui
+                                a pour certains une valeur d'ordre. Les Annonaceae
+                                réalisent des progrès remarquables dans...
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <!-- plante 6 -->
+
+                <div class="plant-card">
+                    <a href="description/carica-papaya-description.html">
+                        <img src="../img/plantes/carica-papaya.png" alt="carica papaya" class="plant-card-img">
+                        <div class="plant-card-bottom">
+                            <h3 class="plant-name">Carica papaya</h3>
+                            <p class="plant-description">
+                                Arbre ou arbuste persistant (hauteur : 3-8 m),
+                                submonocaule. Feuilles suborbiculaires (longueur : 70 cm),
+                                palmatilobées à palmatifides, composées de 7-11 lobes,
+                                aux marges dentées à subpinnatifides...
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <!-- plante 7 -->
+
+                <div class="plant-card">
+                    <a href="description/biden_pilosa-description.html">
+                        <img src="../img/plantes/biden_pilosa.png" alt="biden_pilosa" class="plant-card-img">
+                        <div class="plant-card-bottom">
+                            <h3 class="plant-name">biden pilosa</h3>
+                            <p class="plant-description">
+                                Plante herbacée annuelle érigée, jusqu’à 100 cm de haut,
+                                à tiges fines, raides et quadrangulaires et rameaux étalés.
+                                Feuilles opposées décussées, pennées à 3–5 folioles,
+                                jusqu’à 15(–20) cm de long, les feuilles inférieures parfois...
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <!-- plante 8 -->
+
+                <div class="plant-card">
+                    <a href="description/chromolaena_odorata-description.html">
+                        <img src="../img/plantes/chromolaena_odorata.png" alt="chromolaena odorata" class="plant-card-img">
+                        <div class="plant-card-bottom">
+                            <h3 class="plant-name">Chromolaena odorata</h3>
+                            <p class="plant-description">
+                                Chromolaena odorata est une plante buissonnante
+                                à tige lignifiée, étalée et très ramifiée, qui
+                                constitue des massifs denses. Elle peut atteindre
+                                jusqu'à 7m de hauteur. Elle est entièrement couverte
+                                d'une...
+                            </p>
+                        </div>
+                   </a>
+                </div>
+                <!-- plante 9 -->
+
+                <div class="plant-card">
+                    <a href="description/agave-description.html">
+                        <img src="../img/plantes/agave.png" alt="agave" class="plant-card-img">
+                        <div class="plant-card-bottom">
+                            <h3 class="plant-name">Agave décipiens</h3>
+                            <p class="plant-description">
+                                L'agave decipiens est une plante succulente à
+                                feuilles persistantes en forme d'arbre avec une
+                                tige de 1 à 3 mètres de haut surmontée d'une dense
+                                rosette de feuilles en forme d'épée, généralement de...
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <!-- plante 10 -->
+                <div class="plant-card">
+                    <a href="description/Harungana-description.html">
+                        <img src="../img/plantes/Harungana_madagascariensis_Bioko.png" alt="Harungana_madagascariensis_Bioko" class="plant-card-img">
+                        <div class="plant-card-bottom">
+                            <h3 class="plant-name">Harungana</h3>
+                            <p class="plant-description">
+                                Harungana, aussi appelé bois harongue ou haronga,
+                                est une espèce d'arbuste de la famille des Hypericaceae.
+                                Cet arbre fruitier, est une plante originaire de Madagascar
+                                et pousse dans les forêts d'Afrique tropicale...
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <!-- plante 11 -->
+                <div class="plant-card">
+                    <a href="description/jatropha gossypiifolia-description.html">
+                        <img src="../img/plantes/jatropha gossypiifolia.png" alt="jatropha gossypiifolia" class="plant-card-img">
+                        <div class="plant-card-bottom">
+                            <h3 class="plant-name">jatropha gossypiifolia</h3>
+                            <p class="plant-description">
+                                Petit buisson atteignant 3 m de hauteur, contenant
+                                un latex blanc, et présentant des poils glanduleux
+                                sur les tiges, les pétioles et le bord des feuilles.
+                                Feuilles simples, de couleur verte ou pourpre, luisant...
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <!-- plante 12 -->
+                <div class="plant-card">
+                    <a href="description/Jatropha_curcas-description.html">
+                        <img src="../img/plantes/Jatropha_curcas_henning.png" alt="plante 12" class="plant-card-img">
+                        <div class="plant-card-bottom">
+                            <h3 class="plant-name">Jatropha curcas henning</h3>
+                            <p class="plant-description">
+                                Jatropha curcas (ou Curcas curcas) est une espèce
+                                d'arbuste de la famille des Euphorbiaceae originaire
+                                du Brésil. Bien qu'étant toxique, cette plante est
+                                cultivée notamment pour la production d'huile à usage...
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <!-- plante 13 -->
+                <div class="plant-card">
+                    <a href="description/Ocimum_gratissimum-description.html">
+                        <img src="../img/plantes/Ocimum_gratissimum.png" alt="Ocimum_gratissimum" class="plant-card-img">
+                        <div class="plant-card-bottom">
+                            <h3 class="plant-name">Ocimum gratissimum</h3>
+                            <p class="plant-description">
+                                Ocimum gratissimum ou Ocimum suave est un basilic
+                                pérenne qui pousse sous forme d’arbrisseau ou de
+                                buissons qui peuvent atteindre jusqu’à deux mètres
+                                de hauteur. Ses feuilles aromatiques ovées ou elliptiques,
+                                ont des bords...
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <!--
+                <!-- plante 14 
+                <div class="plant-card">
+                    <img src="../img/plantes/plant14.jpg" alt="plante 14" class="plant-card-img">
+                    <div class="plant-card-bottom">
+                        <h3 class="plant-name">Petugna de Borunga</h3>
+                        <p class="plant-description">
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nostrum vero est fugit
+                            nulla aliquam doloremque omnis facilis
+                            repudiandae, error sit? Eius nulla laborum culpa! Maxime necessitatibus deserunt...
+                        </p>
+                    </div>
+                </div>
+                <!-- plante 15 
+                <div class="plant-card">
+                    <img src="../img/plantes/plant15.jpg" alt="plante 15" class="plant-card-img">
+                    <div class="plant-card-bottom">
+                        <h3 class="plant-name">Petugna de Borunga</h3>
+                        <p class="plant-description">
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nostrum vero est fugit
+                            nulla aliquam doloremque omnis facilis
+                            repudiandae, error sit? Eius nulla laborum culpa! Maxime necessitatibus deserunt...
+                        </p>
+                    </div>
+                </div>
+                <!-- plante 16 
+                <div class="plant-card">
+                    <img src="../img/plantes/plant16.jpg" alt="plante 16" class="plant-card-img">
+                    <div class="plant-card-bottom">
+                        <h3 class="plant-name">Petugna de Borunga</h3>
+                        <p class="plant-description">
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nostrum vero est fugit
+                            nulla aliquam doloremque omnis facilis
+                            repudiandae, error sit? Eius nulla laborum culpa! Maxime necessitatibus deserunt...
+                        </p>
+                    </div>
+                </div>
+                <!-- plante 17 
+                <div class="plant-card">
+                    <img src="../img/plantes/plant17.jpg" alt="plante 17" class="plant-card-img">
+                    <div class="plant-card-bottom">
+                        <h3 class="plant-name">Petugna de Borunga</h3>
+                        <p class="plant-description">
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nostrum vero est fugit
+                            nulla aliquam doloremque omnis facilis
+                            repudiandae, error sit? Eius nulla laborum culpa! Maxime necessitatibus deserunt...
+                        </p>
+                    </div>
+                </div>
+                <!-- plante 18 
+                <div class="plant-card">
+                    <img src="../img/plantes/plant18.jpg" alt="plante 18" class="plant-card-img">
+                    <div class="plant-card-bottom">
+                        <h3 class="plant-name">Petugna de Borunga</h3>
+                        <p class="plant-description">
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nostrum vero est fugit
+                            nulla aliquam doloremque omnis facilis
+                            repudiandae, error sit? Eius nulla laborum culpa! Maxime necessitatibus deserunt...
+                        </p>
+                    </div>
+                </div>
+                <!-- plante 19 
+                <div class="plant-card">
+                    <img src="../img/plantes/plant19.jpg" alt="plante 19" class="plant-card-img">
+                    <div class="plant-card-bottom">
+                        <h3 class="plant-name">Petugna de Borunga</h3>
+                        <p class="plant-description">
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nostrum vero est fugit
+                            nulla aliquam doloremque omnis facilis
+                            repudiandae, error sit? Eius nulla laborum culpa! Maxime necessitatibus deserunt...
+                        </p>
+                    </div>
+                </div>
+                <!-- plante 20 
+                <div class="plant-card">
+                    <img src="../img/plantes/plant20.jpg" alt="plante 20" class="plant-card-img">
+                    <div class="plant-card-bottom">
+                        <h3 class="plant-name">Petugna de Borunga</h3>
+                        <p class="plant-description">
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nostrum vero est fugit
+                            nulla aliquam doloremque omnis facilis
+                            repudiandae, error sit? Eius nulla laborum culpa! Maxime necessitatibus deserunt...
+                        </p>
+                    </div>
+                </div>
+                <!-- plante 21 
+                <div class="plant-card">
+                    <img src="../img/plantes/plant21.jpg" alt="plante 21" class="plant-card-img">
+                    <div class="plant-card-bottom">
+                        <h3 class="plant-name">Petugna de Borunga</h3>
+                        <p class="plant-description">
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nostrum vero est fugit
+                            nulla aliquam doloremque omnis facilis
+                            repudiandae, error sit? Eius nulla laborum culpa! Maxime necessitatibus deserunt...
+                        </p>
+                    </div>
+                </div>
+                <!-- plante 22 
+                <div class="plant-card">
+                    <img src="../img/plantes/plant22.jpg" alt="plante 22" class="plant-card-img">
+                    <div class="plant-card-bottom">
+                        <h3 class="plant-name">Petugna de Borunga</h3>
+                        <p class="plant-description">
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nostrum vero est fugit
+                            nulla aliquam doloremque omnis facilis
+                            repudiandae, error sit? Eius nulla laborum culpa! Maxime necessitatibus deserunt...
+                        </p>
+                    </div>
+                </div>
+                <!-- plante 23 
+                <div class="plant-card">
+                    <img src="../img/plantes/plant23.jpg" alt="plante 23" class="plant-card-img">
+                    <div class="plant-card-bottom">
+                        <h3 class="plant-name">Petugna de Borunga</h3>
+                        <p class="plant-description">
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nostrum vero est fugit
+                            nulla aliquam doloremque omnis facilis
+                            repudiandae, error sit? Eius nulla laborum culpa! Maxime necessitatibus deserunt...
+                        </p>
+                    </div>
+                </div>
+                <!-- plante 24 
+                <div class="plant-card">
+                    <img src="../img/plantes/plant24.jpg" alt="plante 24" class="plant-card-img">
+                    <div class="plant-card-bottom">
+                        <h3 class="plant-name">Petugna de Borunga</h3>
+                        <p class="plant-description">
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nostrum vero est fugit
+                            nulla aliquam doloremque omnis facilis
+                            repudiandae, error sit? Eius nulla laborum culpa! Maxime necessitatibus deserunt...
+                        </p>
+                    </div>
+                </div>
+                <!-- plante 25 
+                <div class="plant-card">
+                    <img src="../img/plantes/plant25.jpg" alt="plante 25" class="plant-card-img">
+                    <div class="plant-card-bottom">
+                        <h3 class="plant-name">Petugna de Borunga</h3>
+                        <p class="plant-description">
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nostrum vero est fugit
+                            nulla aliquam doloremque omnis facilis
+                            repudiandae, error sit? Eius nulla laborum culpa! Maxime necessitatibus deserunt...
+                        </p>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+
+    </body>
+</html>
